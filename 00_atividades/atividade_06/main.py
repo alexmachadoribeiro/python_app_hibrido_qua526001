@@ -1,4 +1,19 @@
 # TODO: atividade
+
+# declaração de dicionário
+usuario = {}
+
+# entrada de dados
+usuario['nome'] = input("Informe o nome: ").strip().title()
+usuario['email'] = input("Informe o e-mail: ").strip().lower()
+usuario['telefone'] = input("Informe o telefone: ").strip()
+usuario['cpf'] = input("Informe o CPF: ").strip()
+usuario['genero'] = input("Informe o gênero: ").strip()
+
+# saída de dados
+for chave in usuario:
+    print(f"{chave.capitalize()}: {usuario[chave]}")
+
 """
 Crie um programa que receba do usuário os seguintes dados:
 - Nome
