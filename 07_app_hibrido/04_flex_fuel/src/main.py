@@ -2,6 +2,8 @@ import flet as ft
 
 
 def main(page: ft.Page):
+    # TODO: criar função do evento
+
     page.title = "App Flex Fuel"
     page.scroll = "adaptive"
     page.theme_mode = ft.ThemeMode.LIGHT
@@ -38,6 +40,7 @@ def main(page: ft.Page):
                 ft.Container(etanol, col={"sm": 6, "md": 4, "xl": 2})
             ]
         )
+        # TODO: criar botão que executa o evento
     )
 
 
