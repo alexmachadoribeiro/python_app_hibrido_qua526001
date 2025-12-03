@@ -237,12 +237,18 @@ def main(page: ft.Page):
     )
         
     page.add(
-        ft.SafeArea(
-            ft.Container(
-                # TODO: preencher a janela
-                alignment=ft.alignment.center,
-            ),
-            expand=True,
+        ft.Column(
+            [
+                logo_cabecalho, linha_url,
+                ft.Divider(height=0, color=ft.Colors.TRANSPARENT),
+                video_info, botoes,
+                ft.Divider(height=10, color=ft.Colors.TRANSPARENT),
+                progress_bar, status_text
+            ],
+            spacing=15,
+            alignment=ft.CrossAxisAlignment.CENTER,
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            scroll=ft.ScrollMode.AUTO
         )
     )
 
