@@ -1,5 +1,5 @@
 [project]
-name = "05-yt-downloader"
+name = "yt-downloader"
 version = "0.1.0"
 description = ""
 readme = "README.md"
