@@ -6,6 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+# FIXME: corrigir função enviar()
 @app.route("/enviar")
 def enviar():
     texto = request.form.get('texto')
