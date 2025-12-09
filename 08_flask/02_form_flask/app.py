@@ -6,10 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-# FIXME: corrigir função enviar()
-@app.route("/enviar")
+@app.route("/enviar", methods=["POST"])
 def enviar():
-    texto = request.form.get('texto')
+    texto = request.form.get('texto') # FIXME: texto = request.form.get('texto', '')
     return render_template("index.html", saida=texto)
 
 if __name__ == "__main__":
