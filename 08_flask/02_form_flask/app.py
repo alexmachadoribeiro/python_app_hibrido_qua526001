@@ -8,7 +8,7 @@ def index():
 
 @app.route("/enviar", methods=["POST"])
 def enviar():
-    texto = request.form.get('texto') # FIXME: texto = request.form.get('texto', '')
+    texto = request.form.get('texto', '')
     return render_template("index.html", saida=texto)
 
 if __name__ == "__main__":
