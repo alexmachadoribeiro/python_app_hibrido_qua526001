@@ -8,7 +8,8 @@ authors = [
     { name = "Flet developer", email = "you@example.com" }
 ]
 dependencies = [
-  "flet==0.28.3"
+  "flet==0.28.3",
+  "pytubefix==10.3.6"
 ]
 
 [tool.flet]
@@ -32,7 +33,7 @@ path = "src"
 [tool.uv]
 dev-dependencies = [
     "flet[all]==0.28.3",
-    "pytubefix",
+    "pytubefix==10.3.6",
 ]
 
 [tool.poetry]
