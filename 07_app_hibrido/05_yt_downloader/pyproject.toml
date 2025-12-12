@@ -9,7 +9,6 @@ authors = [
 ]
 dependencies = [
   "flet==0.28.3",
-  "pytubefix==10.3.6",
   "aiohttp>=3.12.13",
   "aiohappyeyeballs>=2.5.0",
   "aiosignal>=1.4.0",
@@ -22,6 +21,7 @@ dependencies = [
   "multidict>=4.0",
   "propcache>=0.2.1",
   "nodejs-wheel-binaries>=22.20.0",
+  "pytubefix==10.3.6",
 ]
 
 [tool.flet]
